@@ -11,12 +11,12 @@ if ($_SESSION['loggedIn'] != true)
 <head>
    
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>NexISgen.com - BIT561</title>
-    <meta name="description" content="Class project for BIT 286 - BIT561- Professional Tools. Mission
+    <title>NexISgen.com - BIT562</title>
+    <meta name="description" content="Class project for BIT 285 and BIT 286 - BIT561 and BIT562- Professional Tools. Mission
 
 Construct a database driven website which supports the development of professional knowledge in a variety of languages; supports the documentation and integration of the work of software project team members; and increases the long-term productivity of IT professionals.
 " />
-    <meta name="keywords" content="the,next,generation,information,technology,club,cascadia,community,college,bothell,bit286,bit561,professional tools" />
+    <meta name="keywords" content="the,next,generation,information,technology,club,cascadia,community,college,bothell,bit285,bit286,bit561,bit562,professional tools" />
 
 
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
@@ -48,8 +48,8 @@ Construct a database driven website which supports the development of profession
                 <div class="art-header-inner">
                 <div class="art-headerobject"></div>
                 <div class="art-logo">
-                                 <h1 class="art-logo-name"><a href="../newindex.php">BIT 285 Class Project</a></h1>
-                                                 <h2 class="art-logo-text">NexISgen.Com - BIT561 - Professional Software Development Tools</h2>
+                                 <h1 class="art-logo-name"><a href="../index.php">BIT 276, BIT 285 and BIT 286 Class Project</a></h1>
+                                                 <h2 class="art-logo-text">NexISgen.Com - BIT562 - Professional Software Development Tools</h2>
                                 </div>
                 </div>
             </div>
@@ -65,41 +65,39 @@ Construct a database driven website which supports the development of profession
 		<li>   
                  <a href="index.php" class="active">Home</a>
 		</li>
-        <li> 
-        <a href="../bit562/php/jumpPointDoc.php">Process Project Docs</a>
-        </li>
 <li><a href="#">Forms</a>
 <ul>	
 		<li>
-                        <a href="../bit562/forms/projectfiles.php" class "active">Project Files</a>
+                        <a href="../forms/projectfiles.php" class "active">Project Files</a>
                 </li>
 <li>
-<a href="../bit562/forms/users.php">Users</a>
+<a href="../forms/users.php">Users</a>
+</li>
+<li>
+<a href="http://www.growth-ring-coaching.com/">Growth Ring Coaching</a>
 </li>
 </ul>
 			
 <li>
-<a href="../bit562/forms/login.php#">Login</a>
+<a href="../forms/login.php#">Login</a>
 
 		<ul>
                 
                   
-                
-                  <li>
-                    <a href="https://github.com/tfinnell/bit561">GitHub Project</a>
-                  </li>
+                <li>
+                  <a href="../php/jumpPointDoc.php">Process Project Files</a>
+                </li>
+                <li>
+                  <a href="../doc/index.html">Display Processed Files</a>
+                 </li>
+                 <li>
+                   <a href="https://github.com/tfinnell/bit561">GitHub Project Download</a>
+                 </li>
                  
 
 	</ul>
-<li>
-    <a href="#"Resources</a>
-    <ul>    
-        <li><a href="#">Option 3</a></li>
-        <li><a href="#">option 2</a></li>
-    </ul>
-
 		</li>	
-</ul>
+	</ul>
 </div>
 </div>
 </div>
@@ -133,17 +131,17 @@ Construct a database driven website which supports the development of profession
 <div class="art-content-layout">
     <div class="art-content-layout-row">
     <div class="art-layout-cell" style="width: 33%;">
-        <p><img width="195" height="195" alt="" src="./images/contentimage7.png" style="margin:0;" /></p>
+        <p></p>
         
-        <p style="text-align: center;"><a href="http://www.freedigitalphotos.net/images/view_photog.php?photogid=721">Image: renjith krishnan / FreeDigitalPhotos.net</a></p>
+        <p style="text-align: center;"></p>
     </div><div class="art-layout-cell" style="width: 34%;">
-        <p style="text-align: center;"><img width="195" height="195" alt="" src="./images/contentimage6.png" style="margin:0;" /></p>
+        <p style="text-align: center;"></p>
         
-        <p style="text-align: center;"><a href="http://www.freedigitalphotos.net/images/view_photog.php?photogid=721">Image: renjith krishnan / FreeDigitalPhotos.net</a></p>
+        <p style="text-align: center;"></p>
     </div><div class="art-layout-cell" style="width: 33%;">
-        <p style="text-align: center;"><img width="195" height="195" alt="" src="./images/contentimage4.png" style="margin:0;" /></p>
+        <p style="text-align: center;"></p>
         
-        <p style="text-align: center;"><a href="http://www.freedigitalphotos.net">Image: FreeDigitalPhotos.net</a></p>
+        <p style="text-align: center;"></p>
     </div>
     </div>
 </div>
@@ -154,18 +152,10 @@ Construct a database driven website which supports the development of profession
         <h3 style="text-align: center;">Latest Updates</h3>
         
         <ul>
-            <li>Student hosting BETA site launched 1/22/2012.</li>
-        
-            <li>Game design group moves forward with B.I.T. Spring Technology Fair 2012.</li>
-        
-            <li>Web hosting managment internships in the works.</li>
-        
-            <li>Robotics group builds bluetooth controled robot.</li>
-        
-            <li>Android applications coming soon.</li>
+            
         </ul>
         
-        <p><a href="https://cascadia.collegiatelink.net/organization/The_Next_Generation_I_T_Club" class="art-button">Learn more</a></p>
+        <p></p>
     </div><div class="art-layout-cell layout-item-3" style="width: 67%;">
         <h3 style="text-align: center;">Project Vision</h3>
         <p>The path to profound knowledge and wisdom in a field can be elusive. In a book entitled “Talent is Overrated” Geoff Colvin sums up the research on the development of expertise as a two part proposition: (1) you have to put your 10,000 hours in, and (2) you have to engage in deliberate practice. Research in a number of fields has shown that simply putting in your time is not enough.  As Colvin puts it, “…many people not only failed to become outstandingly good at what they do, no matter how many years they spend doing it, they frequently don’t even get any better than they were when they started.”  Nonetheless, you have to put the time in.  Colvin cites considerable research which casts doubt on the idea of innate talent being much of a predictor of superior performance.</p>  
@@ -179,14 +169,14 @@ Construct a database driven website which supports the development of profession
 
         <ol>
             <li>A professional toolkit would presumably include tested and debugged code that could be reused.  For example, validation is a necessity for data in any application.  The code used to provide validation could be structured to make it easy to include in both the front end and the middle tier.  The code could also coordinate validation in the two places through the database.  Other examples would include code to handle data passage between the browser and the database.  Code that we create for ourselves needs to be located (where are we storing it) and documented.</li>
-            <li>    Tested and debugged code might not be stored in separate files.  Smaller pieces of reusable code (snippets) might be kept in a database.  The code might be directly drawn from the database for inclusion in applications dynamically.  HTML particularly lends itself to this use.  The snippets also might be simply stored for cut and paste inclusion into an application.</li>
-            <li>    Code and discussion might also be created simply for the purpose of studying a language.  An example might be using callbacks in PHP function parameter lists.  Some sample code on what it looks like and some discussion might be included just to help prevent forgetting how it works.</li>
-            <li>    Non code discussion of data processing information that you want to remember could also be included.  Discussions and recording of ideas from agile methodology might be an example.</li>
-            <li>    Information tracking coding standards that will be followed in one’s professional programming efforts might also be of interest.</li>
-            <li>    URL storage of web sites that have useful programming information would be valuable.  The problem with favorite lists on browsers is that they don’t follow us as we move about the web.  There are some good web sites for sharing URLs with other people on the Web, however, they are standalone applications that do not necessarily integrate well with other stored professional knowledge.</li>
-            <li>    Evaluations of available software tools could also prove useful.  The proliferation of high quality frameworks helping solve various application problems is hard to keep up with available solutions.</li>
-            <li>    Since documentation is a professional necessity, the site should support and encourage good documentation habits.  The tools should support the creation of automatically generated documentation in web site form.  In so far as possible documentation should be driven by information contained within the source code documents creating a software application.</li>
-            <li>    Integration of work is a major concern for IT professionals, and so the site should provide support for the integration of project work.  In particular the small tasks derived from the overall project vision and used to create product (overall) and sprint (short interval) backlogs should be published in the database.  Who has committed to work on small projects, time estimates, and actual completion information is valuable and needs to be tracked for each project a team or individual undertakes.  The tracking allows improvement and agile is focused on continuous improvement.</li>
+            <li>Tested and debugged code might not be stored in separate files.  Smaller pieces of reusable code (snippets) might be kept in a database.  The code might be directly drawn from the database for inclusion in applications dynamically.  HTML particularly lends itself to this use.  The snippets also might be simply stored for cut and paste inclusion into an application.</li>
+            <li>Code and discussion might also be created simply for the purpose of studying a language.  An example might be using callbacks in PHP function parameter lists.  Some sample code on what it looks like and some discussion might be included just to help prevent forgetting how it works.</li>
+            <li>Non code discussion of data processing information that you want to remember could also be included.  Discussions and recording of ideas from agile methodology might be an example.</li>
+            <li>Information tracking coding standards that will be followed in one’s professional programming efforts might also be of interest.</li>
+            <li>URL storage of web sites that have useful programming information would be valuable.  The problem with favorite lists on browsers is that they don’t follow us as we move about the web.  There are some good web sites for sharing URLs with other people on the Web, however, they are standalone applications that do not necessarily integrate well with other stored professional knowledge.</li>
+            <li>Evaluations of available software tools could also prove useful.  The proliferation of high quality frameworks helping solve various application problems is hard to keep up with available solutions.</li>
+            <li>Since documentation is a professional necessity, the site should support and encourage good documentation habits.  The tools should support the creation of automatically generated documentation in web site form.  In so far as possible documentation should be driven by information contained within the source code documents creating a software application.</li>
+            <li>Integration of work is a major concern for IT professionals, and so the site should provide support for the integration of project work.  In particular the small tasks derived from the overall project vision and used to create product (overall) and sprint (short interval) backlogs should be published in the database.  Who has committed to work on small projects, time estimates, and actual completion information is valuable and needs to be tracked for each project a team or individual undertakes.  The tracking allows improvement and agile is focused on continuous improvement.</li>
         </ol>
             <p>Expecting every programmer to build a site for their own professional use is unrealistic.  It’s a problem that takes considerable effort to resolve well.  Individuals cannot and do not undertake it lightly.  It’s a common problem for IT people and consequently it’s a problem that should have one or a few generic tools available for long term professional development.  A group of IT knowledgeable folks should have better success at solving the problem than an individual would have.</p>
 
@@ -195,9 +185,9 @@ Construct a database driven website which supports the development of profession
             <p>The site would be driven by open source licensed code. Any professional using it could have access to the code driving the site so as to permit modification and extension.  Presumably, many groups might want to create a clone of the site for their specific purposes and to gain control over the long term viability of their particular site.</p>
         
         </p>
-        <p style="text-align: center;"><img width="300" height="200" alt="" src="./images/clublogo.png" /></p>
+        <p style="text-align: center;"><a href="http://www.tngitc.com"><img width="300" height="200" alt="" src="./images/clublogo.png" /></a></p>
         
-        <p style="text-align: center;font-weight: bold;"> <span style="color: rgb(35, 141, 222);"><a href="https://www.facebook.com/pages/The-Next-Generation-IT-Club-tngitccom/240155819383182?skip_nax_wizard=true">CLUB FACEBOOK PAGE</a></br>Meetings: Wednesday 11 am - 1 pm Room: CC3-234</br>Cascadia Community College, Bothell, WA</br>
+        <p style="text-align: center;font-weight: bold;"> <span style="color: rgb(35, 141, 222);"><a href="https://www.facebook.com/pages/The-Next-Generation-IT-Club-tngitccom/240155819383182?skip_nax_wizard=true">CLUB FACEBOOK PAGE</a></br></br>
             
             
             </span></p>
@@ -219,27 +209,27 @@ Construct a database driven website which supports the development of profession
 <div class="art-box art-block">
     <div class="art-box-body art-block-body">
                 <div class="art-bar art-blockheader">
-                    <h3 class="t">Free Hosting Benefits</h3>
+                    <h3 class="t">Free Project Hosting</h3>
                 </div>
                 <div class="art-box art-blockcontent">
                     <div class="art-box-body art-blockcontent-body">
                 <p><img width="53" height="53" alt="" src="./images/1.png" style="float: left; margin:10px;" /></p>
 
-<p><span style="font-weight: bold;">Free CPANEL LINUX Cloud Hosting</span></p>
+<p><span style="font-weight: bold;">Free LINUX Hosting</span></p>
 
-<p>100 MB of space for your project portfolio.</p><br />
+<p>100 MB of space for your project. Grab the code from git hub and create your own project.</p><br />
 
 <p><img width="53" height="53" alt="" src="./images/2.png" style="float: left; margin:10px;" /></p>
 
-<p><span style="font-weight: bold;">1 Click Installs</span></p>
+<p><span style="font-weight: bold;">Fantastico Installs</span></p>
 
-<p>50+ 1 click install applications for you to use and experiment with.</p><br />
+<p>50+ Fantastico 1 click installed applications for you to use and experiment with.</p><br />
 
 <p><img width="53" height="53" alt="" src="./images/3.png" style="float: left; margin:10px;" /></p>
 
 <p><span style="font-weight: bold;">Expandable accounts</span></p>
 
-<p><span style="font-weight: bold;"></span>Keep your class projects available to the public from class to class and after you graduate while you are looking for paying clients or jobs.</p><p> Until we get our local servers setup we have found a cool free solution for you to try. Some of our members have used this system and found it to be a nice solution for a small site to test out projects on.</p>                
+<p><span style="font-weight: bold;">Upgrade when you need to, register your own domain name if you want to.</span></p><p></p>                
                                 		<div class="cleared"></div>
                     </div>
                 </div>
@@ -255,7 +245,7 @@ Construct a database driven website which supports the development of profession
                     <div class="art-box-body art-blockcontent-body">
                 <p style="text-align: center;"><img width="209" height="208" alt="" src="./images/blockimage2.png" /></p>
 
-<p><a href="https://hostzil.la/user/aff.php?aff=345" class="art-button">Start here</a></p>                
+<p><a href="https://hostzil.la/user/aff.php?aff=345" class="art-button">Get one here</a></p>                
                                 		<div class="cleared"></div>
                     </div>
                 </div>
@@ -274,7 +264,18 @@ Construct a database driven website which supports the development of profession
                     
                             <div class="art-footer-text">
                                 <br />
-Copyleft © 2012 The Next Generation I.T. Club All Rights Public Domain<br />
+<a href="license.php">Copyleft © 2012 NexISgen.Com All Rights MIT Licensed</a><br />
+<p style="font-size:8px;">Copyright (c) 2012 Albert Abenes, Ed Anderson, Sandus Aqid, Matt Bell, Shawn Brook, Tom Christilaw, Tim Finnell, Chris Griffing, Heather Henderickson, Ted Keith, Michael McGinn, Eric Rootvik, Igor Smirnov, Logan Tegman, Michael Wolmstead, Chea Yeam</p>
+<p></p>
+<p style="font-size:8px;">
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+</p>
+<p style="font-size:8px;">
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+</p>
+<p style="font-size:8px;">
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</p>
 <br />
                                 <div class="cleared"></div>
                                 <p class="art-page-footer"></p>
