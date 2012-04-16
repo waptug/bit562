@@ -19,7 +19,7 @@ class Reader {
 
     function __construct(DBManager $databaseManager) {
         $this->mgr = $databaseManager;
-        $this->br = new Brace($databaseManager);
+        
     }
 
     public function getCommandType($commandType) {
