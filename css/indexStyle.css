@@ -107,6 +107,9 @@ ul.nav .topline {
 	text-align:center;
 }
 
+#main li {
+	list-style-image:url('../images/bullet_hole_1.png');
+}
 #footer {
 	text-align:center;
 	width:900px;
