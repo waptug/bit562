@@ -71,5 +71,11 @@ class TestForCodeSnippetsPage extends WebTestCase {
         $this->clickLinkById('codesnippetsForm');
         $this->assertResponse(200);
         $this->assertTitle('Code Snippets');
+        // Mike's tests
+        $this->clickLinkById('something');
+        $this->assertResponse(200);
+        $this->assertTitle('somting');
+        
+        
     }
 }
