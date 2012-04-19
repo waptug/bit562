@@ -44,7 +44,13 @@ if ($_SESSION['loggedIn'] != true)
 								<li><a href="php/jumpPointDoc.php">Run jumpPointDoc</a></li>
 								<li>
 									<a href="doc">Output Docs</a>						
-								</li>													
+								</li>
+                                <li>
+                                    <a href="php/processSQLTables.php">Process SQL Tables</a>
+                                </li>
+                                <li>
+                                    <a href="php/uploadZipFile.php">Upload ZIP package</a>
+                                </li>
 							</ul>
 						</li>			
 						<li>
