@@ -114,6 +114,9 @@ if ($_SESSION['loggedIn'] != true)
                                                                 <li>
                                                                         <a href="http://git-scm.com/documentation" target="repo">GIT Docs</a>
                                                                 </li>
+                                                                <li>
+                                                                        <a href="http://vimdoc.sourceforge.net/htmldoc/editing.html" target "repo">VIM Docs</a>
+                                                                </li>
 								<li>
 									<a class="sub">W3Schools</a>
 									<ul>
