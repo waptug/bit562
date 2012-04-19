@@ -38,7 +38,7 @@ if ($_SESSION['loggedIn'] != true)
 								<li>
 									<a href="forms/codesnippets.php">Code Snippets Form</a>						
 								</li>
-                                                                <li><a href="https://hostzil.la/user/aff.php?aff=345">Free Project Hosting Account</a></li>							
+                                                                <li><a href="https://hostzil.la/user/aff.php?aff=345">Free Project Hosting</a></li>							
 							</ul>
 						</li>
 						<li><a class="navlink">Auto Docs</a>
