@@ -14,5 +14,6 @@ Hosting Requirements
 ------------
 
 PHP Version: 5.3.8 
-Apache Version: 2.2.21 
+Apache Version: 2.2.21
+MySQL version 5.0.95+ 
 
