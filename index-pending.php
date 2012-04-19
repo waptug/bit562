@@ -28,6 +28,7 @@ if ($_SESSION['loggedIn'] != true)
 					<ul class="nav" id="nav">
 						<li><a href="index.php" class="navlink">Home</a></li>
 						<li><a href="forms/login.php" class="navlink">Login</a></li>
+                                                
 						<li><a class="navlink">Forms</a>
 							<ul>
 								<li><a href="forms/projectfiles.php">Project Files Form</a></li>
@@ -36,7 +37,8 @@ if ($_SESSION['loggedIn'] != true)
 								</li>
 								<li>
 									<a href="forms/codesnippets.php">Code Snippets Form</a>						
-								</li>							
+								</li>
+                                                                <li><a href="https://hostzil.la/user/aff.php?aff=345">Free Project Hosting Account</a></li>							
 							</ul>
 						</li>
 						<li><a class="navlink">Auto Docs</a>
@@ -103,6 +105,15 @@ if ($_SESSION['loggedIn'] != true)
 								<li>
 									<a href="http://php.net/manual/en/index.php" target="repo">PHP Manual</a>
 								</li>
+                                                                <li>
+									<a href="http://dev.mysql.com/doc/refman/5.0/en/index.html" target="repo">MySQL Manual</a>
+								</li>
+                                                                <li>
+                                                                        <a href="http://www.apachefriends.org/en/faq-xampp.html" target "repo">XAMPP Docs</a>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="http://git-scm.com/documentation" target="repo">GIT Docs</a>
+                                                                </li>
 								<li>
 									<a class="sub">W3Schools</a>
 									<ul>
@@ -132,7 +143,7 @@ if ($_SESSION['loggedIn'] != true)
 										</li>
 										<li>
 											<a href="http://www.w3schools.com/css3/default.asp" target="ref">CSS3</a>
-										</li>
+										
 									</ul>
 								</li>
 								<li>
