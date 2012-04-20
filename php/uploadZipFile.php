@@ -11,5 +11,5 @@ Program will ask for a e-mail address to send back the procressed files as a .zi
  the payload back to the user that requested it.<br/>
 - system will send link to parsed document folder for display on-line<br/>
 - system will request a donation from the user after the work is done.");
-echo ("<a href="../index.php">Return to main menu</a>");
+echo ("<a href='../index.php'>Return to main menu</a>");
 ?>
