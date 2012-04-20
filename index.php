@@ -39,7 +39,7 @@ if ($_SESSION['loggedIn'] != true)
 									<a href="forms/codesnippets.php">Code Snippets Form</a>						
 								</li>
                                 <li>
-									<a href="forms/backLogForm.php">Back Log</a>						
+									<a href="forms/backLogForm.php">Back Log Form</a>						
 								</li>
                                 <li>
                                     <a href="https://hostzil.la/user/aff.php?aff=345">Free Project Hosting</a>
