@@ -39,10 +39,7 @@ if ($_SESSION['loggedIn'] != true)
 									<a href="forms/codesnippets.php">Code Snippets Form</a>						
 								</li>
                                 <li>
-									<a href="forms/backLogSystem.php">Back Log System</a>						
-								</li>
-                                <li>
-									<a href="forms/displaytestTable.php">Display Test Table Form</a>						
+									<a href="forms/backLogForm.php">Back Log</a>						
 								</li>
                                 <li>
                                     <a href="https://hostzil.la/user/aff.php?aff=345">Free Project Hosting</a>
@@ -58,6 +55,9 @@ if ($_SESSION['loggedIn'] != true)
                                 <li>
                                     <a href="php/processSQLTables.php">Process SQL Tables</a>
                                 </li>
+                                <li>
+									<a href="forms/testTableReport.php">Test Table Report</a>						
+								</li>
                                 <li>
                                     <a href="php/uploadZipFile.php">Upload ZIP package</a>
                                 </li>
