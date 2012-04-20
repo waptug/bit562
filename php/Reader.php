@@ -238,7 +238,8 @@ class Reader {
         fwrite($indexHtml, '<tr><th>File</th><th>Extension</th><th>Destination</th><th>Source</th><th>File Size</th></tr>');
         foreach ($this->projectFiles as $projectFile) {
             $lastSlashPos = strrpos($projectFile->getSource(), '/');
-            $inputFileNameAndExtension = substr($projectFile->getSource(), $lastSlashPos, strlen($projectFile->getSource()) - 1);
+            //$inputFileNameAndExtension = substr($projectFile->getSource(), $lastSlashPos, strlen($projectFile->getSource()) - 1);
+            $inputFileNameAndExtension = substr($projectFile->getSource(), $lastSlashPos, strlen($projectFile->getSource()) - 0);
             $lastPeriodPos = strrpos($inputFileNameAndExtension, '.');
             $inputFileNameMinusExtension = substr($inputFileNameAndExtension, 0, $lastPeriodPos);
             $inputFileExtension = substr($inputFileNameAndExtension, $lastPeriodPos, strlen($inputFileNameAndExtension));
