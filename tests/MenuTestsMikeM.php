@@ -1,7 +1,6 @@
 ﻿<?php
 
 require_once(dirname(__FILE__).'/simpletest/autorun.php');
-require_once(dirname(__FILE__).'/simpletest/mock_objects.php');
 require_once(dirname(__FILE__).'/simpletest/web_tester.php');
 class TestMenuSystem extends WebTestCase {
     function testPage() {
