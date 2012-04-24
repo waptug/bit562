@@ -22,13 +22,14 @@ class TestMenuSystem extends WebTestCase {
         $this->assertText('File');
         //A test that will fail.
         $this->back();
-        $this->click('PHP Manual');
+        $this->clickLink('PHP Manual');//Opens New Page
         $this->showRequest();
         $this->showHeaders();
         $this->showSource();
         $this->showText();
         $this->assertTitle('PHP: PHP Manual - Manual');
-        
+        $this->back();
+        $this->assertTitle('BIT562 - Home');
         
         
     }
