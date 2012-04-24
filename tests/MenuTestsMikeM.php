@@ -22,8 +22,12 @@ class TestMenuSystem extends WebTestCase {
         $this->assertText('File');
         //A test that will fail.
         $this->back();
-        $this->clickLink('not here');
-        $this->assertText('text not here');
+        $this->click('PHP Manual');
+        $this->showRequest();
+        $this->showHeaders();
+        $this->showSource();
+        $this->showText();
+        $this->assertTitle('PHP: PHP Manual - Manual');
         
         
         

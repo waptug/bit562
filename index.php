@@ -26,7 +26,11 @@ if ($_SESSION['loggedIn'] != true)
 
 				<div id="navigation">
 					<ul class="nav" id="nav">
-						<li><a href="index.php" class="navlink">Home</a></li>
+						<li><a href="index.php" class="navlink">Home</a>
+                        <ul>
+                        <li><a href="tests/">Tests</a></li>
+                        </ul>
+                        </li>
 						<li><a href="forms/login.php" class="navlink">Login</a></li>
                                                 
 						<li><a class="navlink">Forms</a>
