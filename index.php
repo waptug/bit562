@@ -33,7 +33,7 @@ if ($_SESSION['loggedIn'] != true)
                                 <li>
                                    <a href="tests">Tests Folder</a> 
                                 </li>
-                                <li><a href="#">new</a></li>
+                                <li><a href="https://www.google.com">Search Google</a></li>
                             </ul>
                         </li>
                         
