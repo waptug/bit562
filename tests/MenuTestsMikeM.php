@@ -20,14 +20,14 @@ class TestMenuSystem extends WebTestCase {
         $this->assertResponse(200);
         $this->assertTitle('');
         $this->assertText('File');
-        //A test that will fail.
         $this->back();
-        $this->clickLink('PHP Manual');//Opens New Page
+        //A test that will fail because it is a https page
+        $this->clickLink('Free Project Hosting');//Trys to Open New Page that is secure https
         $this->showRequest();
         $this->showHeaders();
         $this->showSource();
         $this->showText();
-        $this->assertTitle('PHP: PHP Manual - Manual');
+        $this->assertTitle('HostZilla, Inc. | Cloud Web Hosting Service Provider');
         $this->back();
         $this->assertTitle('BIT562 - Home');
         

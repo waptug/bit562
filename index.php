@@ -28,7 +28,15 @@ if ($_SESSION['loggedIn'] != true)
 					<ul class="nav" id="nav">
 						<li><a href="index.php" class="navlink">Home</a>
                         <ul>
-                        <li><a href="tests/">Tests</a></li>
+                        <li class="topline"><a href="https://hostzil.la/user/aff.php?aff=345">Free Project Hosting</a>
+                            <ul>
+                                <li>
+                                   <a href="tests">Tests Folder</a> 
+                                </li>
+                                <li><a href="#">new</a></li>
+                            </ul>
+                        </li>
+                        
                         </ul>
                         </li>
 						<li><a href="forms/login.php" class="navlink">Login</a></li>
@@ -45,12 +53,10 @@ if ($_SESSION['loggedIn'] != true)
                                 <li>
 									<a href="forms/backLogForm.php">Back Log Form</a>						
 								</li>
-                                <li>
-                                    <a href="https://hostzil.la/user/aff.php?aff=345">Free Project Hosting</a>
-                                </li>							
+                                							
 							</ul>
 						</li>
-						<li><a class="navlink">Auto Docs</a>
+						<li><a class="navlink">Appplications</a>
 							<ul>
 								<li><a href="php/jumpPointDoc.php">Run jumpPointDoc</a></li>
 								<li>
@@ -129,6 +135,10 @@ if ($_SESSION['loggedIn'] != true)
                                                                 <li>
                                                                         <a href="http://vimdoc.sourceforge.net/htmldoc/editing.html" target "repo">VIM Docs</a>
                                                                 </li>
+                                                                <li>
+                                                                        <a href="http://simpletest.org/api/">SimpleTest API</a>
+                                                                </li>
+                                                                
 								<li>
 									<a class="sub">W3Schools</a>
 									<ul>
