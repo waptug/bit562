@@ -30,6 +30,14 @@ class TestMenuSystem extends WebTestCase {
         $this->assertTitle('HostZilla, Inc. | Cloud Web Hosting Service Provider');
         $this->back();
         $this->assertTitle('BIT562 - Home');
+        $this->clickLink('Search Google');//Trys to Open New Page that is secure https
+        $this->showRequest();
+        $this->showHeaders();
+        $this->showSource();
+        $this->showText();
+        $this->assertTitle('Google');
+        $this->back();
+        $this->assertTitle('BIT562 - Home');
         
         
     }
