@@ -24,7 +24,23 @@ class TestMenuSystem extends WebTestCase {
         $this->back();
         $this->clickLink('not here');
         $this->assertText('text not here');
-        
+        //A test that will fail because it is a https page
+        $this->clickLink('Free Project Hosting');//Trys to Open New Page that is secure https
+        $this->showRequest();
+        $this->showHeaders();
+        $this->showSource();
+        $this->showText();
+        $this->assertTitle('HostZilla, Inc. | Cloud Web Hosting Service Provider');
+        $this->back();
+        $this->assertTitle('BIT562 - Home');
+        $this->clickLink('Search Google');//Trys to Open New Page that is secure https
+        $this->showRequest();
+        $this->showHeaders();
+        $this->showSource();
+        $this->showText();
+        $this->assertTitle('Google');
+        $this->back();
+        $this->assertTitle('BIT562 - Home');
         
         
     }
