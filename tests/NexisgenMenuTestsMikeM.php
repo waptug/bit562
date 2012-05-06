@@ -76,7 +76,8 @@ class TestMenuSystem extends WebTestCase {
         //Test for a Joomla page
         $url = 'http://www.joomla.org';
         $this->get($url);
-        $this->showSource();
+        $string = $this->showSource();
+        //use sub strin function to pars string to see if text snip in in the source.
         $this->assertText('<meta name="generator" content="Joomla!');
         
         
