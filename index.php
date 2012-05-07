@@ -71,6 +71,9 @@ if ($_SESSION['loggedIn'] != true)
                                 <li>
                                     <a href="php/uploadZipFile.php">Upload ZIP package</a>
                                 </li>
+                                <li>
+                                <a href="uploads">Display uploaded files folder</a>
+                                </li>
 							</ul>
 						</li>			
 						<li>
