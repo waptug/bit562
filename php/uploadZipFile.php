@@ -176,7 +176,7 @@ function zip_close(&$fp)
 }
 
 */
-/*Zip class functions
+/*Zip class functions */
 $ARCHIVE = new zip;
 
 $ARCHIVE->makeZip('./','./toto.zip'); // make an ZIP archive
@@ -251,6 +251,6 @@ class zip
             $zip->addFile($dir, str_replace($racine, '', $dir));
     }
 }
-*/
+/*/
 
 ?>
