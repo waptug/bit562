@@ -53,6 +53,10 @@ if ($_SESSION['loggedIn'] != true)
                                 <li>
 									<a href="forms/backLogForm.php">Back Log Form</a>						
 								</li>
+                                <li>
+                                <a href="forms/search_files.php">Search Files for text snips</a>
+                                </li>
+                              
                                 							
 							</ul>
 						</li>

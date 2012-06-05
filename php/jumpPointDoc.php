@@ -5,13 +5,17 @@ require_once('DBManager.php');
 require_once('db_login.php');
 
 $db_dsn = "mysql:host={$db_host};dbname={$db_database}";
-
+echo $db_dsn;
 $databaseManager = new DBManager($db_dsn, $db_username, $db_password);
 $databaseManager->open();
+$databaseManager->test("data base is opened");
 // $databaseManager->assertToggle();
-
  $reader = new Reader($databaseManager);
-$reader->retrieveProjectFiles('BIT561');
+ $databaseManager->test("Reader Open");
+//$reader->retrieveProjectFiles('BIT561');
+//$reader->readFiles('');
+  $reader->readSelectDirectoriesForFileNames();
+  $databaseManager->test("Coming out of new directories.");
 $results = $reader->readAndWriteProject();
 
 

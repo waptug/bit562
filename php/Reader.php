@@ -35,10 +35,86 @@ class Reader {
         $command = $commandObj->getCommandName();
         $this->planguage[$command][] = $commandObj;
     }
+/****************************************************************************
+//public_function readDirs($directoryoffiles) {}
+// Using the opendir() function from php read the given directory and loop through each file in that 
+// directory storing each file name into an array that can be passed to projectFiles[]
+$dir = "/xampp/htdocs/bit562/php/";
+//ignore folders and just deal with files. Need to be able to determin if the file type is a dir and skip it
 
+// Open a known directory, and proceed to read its contents
+if (is_dir($dir)) {
+    if ($dh = opendir($dir)) {
+        while (($file = readdir($dh)) !== false) {
+            echo "filename: $file : filetype: " . filetype($dir . $file) . "\n"."<br/>";
+            //creat projectfile object and put it in the projectfile array.
+            //arrayname[file1.php,file2.php]
+            
+        }
+        closedir($dh);
+  }
+}
+   else echo ("not a directory");//We can remove this and replace with some error handeling code if the dir does not exist.
+***********************************************************************************************/
+    //new fuction
+    
+    function isAutoDocFile($extension) {
+        $legalExtensions = array( "php" => true, "html" => true, "js" => true, "css" => true );
+        if ( isset($legalExtensions[$extension])) {
+            return $legalExtensions[$extension];
+        } else {
+            return false;
+        }
+    }
+    
+    //new fuction readSelectDirectoriesForFileNames()
+    
+    public function readSelectDirectoriesForFileNames() {
+        // Part of the Reader object in the final method form. It will be "$this->projectFiles[]".
+        $projectFiles = array(); 
+        $folders = array("/xampp/htdocs/bit562/base/","/xampp/htdocs/bit562/controls/","/xampp/htdocs/bit562/css/","/xampp/htdocs/bit562/forms/","/xampp/htdocs/bit562/javascript/","/xampp/htdocs/bit562/sql/","/xampp/htdocs/bit562/templates/","/xampp/htdocs/bit562/tests/","/xampp/htdocs/bit562/tools/","/xampp/htdocs/bit562/uploads/","/xampp/htdocs/bit562/php/","/xampp/htdocs/bit562/classes/","/xampp/htdocs/bit562/");
+        $targetDirectory = "/xampp/htdocs/bit562/doc/";
+        $this->mgr->test($folders[0]);
+        // Examine folders, one at a time, in the outer loop.
+        for( $i = 0, $len=count($folders); $i < $len; $i+=1 ) {
+            $this->mgr->test($folders[$i]);
+            if (is_dir($folders[$i])) {    
+               $dirHandle = opendir($folders[$i]);
+                $this->mgr->test($folders[$i]);
+                if ( $dirHandle ) {  
+                // Find all the project files in the $i directory if it contains any files. If empty skips to next member of the array.
+                    while ($file = readdir($dirHandle)) {
+                        $filePieces = pathinfo($folders[$i].$file);
+                         if (isset($filePieces['extension']) && $this->isAutoDocFile($filePieces['extension'])) {
+                             $source = $folders[$i].$filePieces['basename'];
+                             $destination = $targetDirectory.$filePieces['filename'].".html";
+                             $this->mgr->test($source."  ;  ".$destination);
+                             $this->projectFiles[] = new ProjectFile('xxxxx-xxxxx-xxxxx-xxxxx',
+                                     $source,
+                                     $destination,
+                                    "Filename captured by reading directories",
+                                    "Filename captured by reading directories",
+                                     date('Y-m-d H:i:s') );
+                         }
+                     }
+                 }
+                 closedir($dirHandle);
+             } else {
+                // Do something about the error case.
+               echo 'It is a big $folders problem.<br />';
+             } 
+          }
+            
+            
+    }
+    //End of readSelectDirectoriesForFileNames() function
+    
+    
     // Read the project file names and target file names from the database.
     // Create a projectFiles array by making a ProjectFile object for each
     // project file and putting it in the array.
+    
+      
     public function retrieveProjectFiles($projectName) {
         $this->projectName = $projectName;
 
