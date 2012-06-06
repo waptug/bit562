@@ -52,7 +52,7 @@ EOF;
   }
 }
 */
-if (!in_array($_SERVER['REMOTE_ADDR'], $allowed)) die('no access allowed. You will need to add your ip address to the allowed array') ;
+//if (in_array($_SERVER['REMOTE_ADDR'], $allowed)) die('no access allowed. You will need to add your ip address to the allowed array') ;
 $file_extensions = array(".php",
                          ".js",
                          ".css",
