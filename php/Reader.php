@@ -72,8 +72,8 @@ if (is_dir($dir)) {
     public function readSelectDirectoriesForFileNames() {
         // Part of the Reader object in the final method form. It will be "$this->projectFiles[]".
         $projectFiles = array(); 
-        $folders = array("/xampp/htdocs/bit562/base/","/xampp/htdocs/bit562/controls/","/xampp/htdocs/bit562/css/","/xampp/htdocs/bit562/forms/","/xampp/htdocs/bit562/javascript/","/xampp/htdocs/bit562/sql/","/xampp/htdocs/bit562/templates/","/xampp/htdocs/bit562/tests/","/xampp/htdocs/bit562/tools/","/xampp/htdocs/bit562/uploads/","/xampp/htdocs/bit562/php/","/xampp/htdocs/bit562/classes/","/xampp/htdocs/bit562/");
-        $targetDirectory = "/xampp/htdocs/bit562/doc/";
+        $folders = array("/xampp/htdocs/bit562/php/");
+        $targetDirectory = "../doc/";
         $this->mgr->test($folders[0]);
         // Examine folders, one at a time, in the outer loop.
         for( $i = 0, $len=count($folders); $i < $len; $i+=1 ) {

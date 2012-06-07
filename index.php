@@ -56,6 +56,9 @@ if ($_SESSION['loggedIn'] != true)
                                 <li>
                                 <a href="forms/search_files.php">Search Files for text snips</a>
                                 </li>
+                                <li>
+                                <a href="cakephp/cakephp/posts">Project blog<a/>
+                                </li>
                               
                                 							
 							</ul>
