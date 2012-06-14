@@ -66,6 +66,7 @@ function uploader($num_of_uploads, $file_types_array, $max_file_size, $upload_di
               if(move_uploaded_file($_FILES["file"]["tmp_name"][$key], $upload_dir.$filename)){
                 echo("File uploaded successfully. - <a href='".$upload_dir.$filename."' target='_blank'>".$filename."</a><br />");
                 echo ("View upload directory - <a href='".$upload_dir."' target='_blank'>".$upload_dir."</a></br/>");
+                echo ("<a href='../index.php'>Return to main menu.</a>");
                 
               }else{
                 echo($origfilename." was not successfully uploaded 1<br />");
@@ -177,13 +178,14 @@ function zip_close(&$fp)
 
 */
 /*Zip class functions */
+/*
 $ARCHIVE = new zip;
 
 $ARCHIVE->makeZip('./','./toto.zip'); // make an ZIP archive
 var_export($ARCHIVE->infosZip('./toto.zip'), false); // get infos of this ZIP archive (without files content)
 var_export($ARCHIVE->infosZip('./toto.zip')); // get infos of this ZIP archive (with files content)
 $ARCHIVE->extractZip('./toto.zip', './1/'); //
-
+*/
 class zip
 {
     public function infosZip ($src, $data=true)

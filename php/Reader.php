@@ -71,12 +71,59 @@ if (is_dir($dir)) {
     
     public function readSelectDirectoriesForFileNames() {
         // Part of the Reader object in the final method form. It will be "$this->projectFiles[]".
-        $projectFiles = array(); 
-        $folders = array("/xampp/htdocs/bit562/php/");
+        //@todo auto create array from starting base folder and recursively build total file system excluding output doc folder
+        $projectFiles = array();
+       // $dir = "/xampp/htdocs/bit562/";
+       // $folders = scandir($dir);
+        //print_r ($folders);
+      //  $dir = new DirectoryIterator(dirname(__FILE__));
+       //foreach ($dir as $fileinfo) {
+       //    if (!$fileinfo->isDot()) {
+      //        var_dump($fileinfo->getFilename());
+      //    }
+        //}
+       // $iterator = new DirectoryIterator(dirname(__FILE__));
+       //echo $iterator->getPath();
+$folders = array();
+$tempfolders = array();
+
+$path = realpath('/xampp/htdocs/bit562/cakephp/');
+
+$objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
+foreach($objects as $name => $object){
+    echo "<br>name="."$name\n"."<br>";
+    $pathchunk = substr($name,2);//Strip off the drive C: letters.
+    echo "pathchunk=".$pathchunk;
+    $pathparts = pathinfo($pathchunk);//Parse path information
+    list( $dirname, $basename, $extension, $filename ) = array_values( pathinfo($pathchunk) );//Split array into vars.
+    echo "<br>pathparts=".$pathparts;
+    $finalpath = $dirname."\\";//grab the pathinfo var we want and add a slash to it.
+    echo "<br>finalpath=".$finalpath."<br>";
+    $convertedpathforlinux = str_replace('\\', '/', $finalpath);
+    echo "convertedpathforlinux=".$convertedpathforlinux."<br>";
+    $tempfolders[] = $convertedpathforlinux;//add path into folders array.
+    
+}
+$folders = array_unique($tempfolders);//Dump all the dups and get a unique list of folders
+
+
+
+//$folders = $objects;
+/*
+        $folders = array("/xampp/htdocs/bit562/php/",
+        "/xampp/htdocs/bit562/",
+        "/xampp/htdocs/bit562/classes/",
+        "/xampp/htdocs/bit562/classes/"
+        );
+  */     
+         //print_r ($objects);
+         echo "the folder array contains<br>";
+         print_r ($folders);
         $targetDirectory = "../doc/";
         $this->mgr->test($folders[0]);
         // Examine folders, one at a time, in the outer loop.
         for( $i = 0, $len=count($folders); $i < $len; $i+=1 ) {
+            $this->mgr->test('Length of $folder[]:'.$len);
             $this->mgr->test($folders[$i]);
             if (is_dir($folders[$i])) {    
                $dirHandle = opendir($folders[$i]);

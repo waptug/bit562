@@ -1,8 +1,58 @@
 <?php
 ob_start();
 //$allowed = array("173.10.77.38", "50.132.74.71","127.0.0.1","localhost") ;
-//$allowed = array("50.132.115.191") ;//List of ip addresses allowed to access this script to keep the whole internet from getting total access to your file code.
-//if (!in_array($_SERVER['REMOTE_ADDR'], $allowed)) die('no access allowed. You will need to add your ip address to the allowed array') ;
+$allowed = array("50.132.115.191") ;//List of ip addresses allowed to access this script to keep the whole internet from getting total access to your file code.
+/* start version checking but not using this
+$myversion = array("major" => "1", "minor" => "6") ;
+if ($_GET['show'] == "version") {
+  die("\$version = " . var_export($myversion, true) . ";") ;
+}else if($_GET['show'] == "download") {
+   $t = file("search_files.php") ;
+   echo (implode("", $t)) ;
+   die() ;
+}else if($_GET['show'] == "update") {
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, "http://host.rootmonster.com/tools/search_files.php?show=download");
+  curl_setopt($ch, CURLOPT_HEADER, 0);
+  ob_start() ;
+  curl_exec($ch);
+  $tmp = ob_get_clean() ;
+  curl_close($ch);
+  $h = fopen("search_files.php", "w") ;
+  fwrite($h, $tmp) ;
+  fclose($h) ;
+  die("Update Successful<br><a href=\"search_files.php\">&lt;&lt; Back</a>") ;
+}else{
+  // create a new curl resource
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, "http://host.rootmonster.com/tools/search_files.php?show=version");
+  curl_setopt($ch, CURLOPT_HEADER, 0);
+  ob_start() ;
+  curl_exec($ch);
+  $tmp = ob_get_clean() ;
+  curl_close($ch);
+  eval($tmp) ;
+  $versionmatch = true ;
+  foreach ($version as $k => $v) {
+    if ($myversion[$k] != $v) $versionmatch = false ;
+  }
+  if (!$versionmatch) {
+    $versionmsg = <<<EOF
+    <div class="versionmsg">
+      <h3>Your version may be out of date</h3>
+      <ul>
+        <li>Current Version: {$version['major']}.{$version['minor']}</li>
+        <li>Your Version: {$myversion['major']}.{$myversion['minor']}</li>
+        <li><a href="search_files.php?show=update">Click to update</a></li>
+      </ul>
+    </div>
+EOF;
+  }else{
+   $versionmsg = "" ;
+  }
+}
+*/
+//if (in_array($_SERVER['REMOTE_ADDR'], $allowed)) die('no access allowed. You will need to add your ip address to the allowed array') ;
 $file_extensions = array(".php",
                          ".js",
                          ".css",

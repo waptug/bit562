@@ -67,19 +67,16 @@ if ($_SESSION['loggedIn'] != true)
 							<ul>
 								<li><a href="php/jumpPointDoc.php">Run jumpPointDoc</a></li>
 								<li>
-									<a href="doc">Output Docs</a>						
+									<a href="doc">Display jumpPointDoc Output</a>						
 								</li>
                                 <li>
                                     <a href="php/processSQLTables.php">Process SQL Tables</a>
                                 </li>
                                 <li>
-									<a href="forms/testTableReport.php">Test Table Report</a>						
+									<a href="apps/XQTOtablemanager/tm_test.php">Test Table Report</a>						
 								</li>
                                 <li>
-                                    <a href="php/uploadZipFile.php">Upload ZIP package</a>
-                                </li>
-                                <li>
-                                <a href="uploads">Display uploaded files folder</a>
+                                    <a href="filemanager.php">File Manager</a>
                                 </li>
 							</ul>
 						</li>			
@@ -147,6 +144,9 @@ if ($_SESSION['loggedIn'] != true)
                                                                 </li>
                                                                 <li>
                                                                         <a href="http://simpletest.org/api/">SimpleTest API</a>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="http://www.cakephp.org">CakePHP docs</a>
                                                                 </li>
                                                                 
 								<li>
